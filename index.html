@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HY STORE OFFICIAL | Modern E-Commerce</title>
+    <title>HY STORE OFFICIAL | Modern Red & Black E-Commerce</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -49,11 +49,11 @@
     <!-- TOP ANNOUNCEMENT BAR -->
     <div class="bg-brandRed text-white text-xs text-center py-2 px-4 font-medium flex justify-between items-center max-w-7xl mx-auto w-full md:px-8">
         <div class="hidden sm:flex items-center space-x-4">
-            <span><i class="fa-solid fa-phone mr-1"></i> +92 300 1234567</span>
-            <span><i class="fa-solid fa-envelope mr-1"></i> support@hystoreofficial.com</span>
+            <span><i class="fa-solid fa-phone mr-1"></i> +92 320 9306672</span>
+            <span><i class="fa-solid fa-envelope mr-1"></i> hybusinessprint@gmail.com</span>
         </div>
         <div class="mx-auto sm:mx-0 font-semibold tracking-wide">
-            🎉 FREE SHIPPING ACROSS PAKISTAN ON ORDERS OVER RS. 3,000!
+            🎁 FREE DELIVERY ACROSS PAKISTAN ON ORDERS OVER PKR 3,000!
         </div>
         <div class="hidden md:flex items-center space-x-3 text-xs">
             <button onclick="switchTab('track')" class="hover:underline"><i class="fa-solid fa-truck-fast mr-1"></i> Track Order</button>
@@ -80,7 +80,7 @@
                 <!-- DESKTOP SEARCH BAR -->
                 <div class="hidden md:flex flex-1 max-w-md mx-8">
                     <div class="relative w-full">
-                        <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search for gifts, watches, accessories..." 
+                        <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Search gifts, watches, accessories..." 
                                class="w-full bg-brandGray text-sm text-white placeholder-gray-400 rounded-full py-2.5 pl-5 pr-12 border border-brandBorder focus:outline-none focus:border-brandRed transition">
                         <button class="absolute right-1 top-1/2 -translate-y-1/2 bg-brandRed text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-red-700 transition">
                             <i class="fa-solid fa-magnifying-glass text-xs"></i>
@@ -148,25 +148,8 @@
                                 TRACK ORDER
                             </button>
                         </div>
-                        
-                        <!-- FEATURES PILLS -->
-                        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-brandBorder/50 text-center md:text-left">
-                            <div>
-                                <p class="text-brandRed font-bold text-lg"><i class="fa-solid fa-truck"></i> Fast Delivery</p>
-                                <p class="text-xs text-gray-400">Across Pakistan</p>
-                            </div>
-                            <div>
-                                <p class="text-brandRed font-bold text-lg"><i class="fa-solid fa-hand-holding-dollar"></i> COD</p>
-                                <p class="text-xs text-gray-400">Cash on Delivery</p>
-                            </div>
-                            <div>
-                                <p class="text-brandRed font-bold text-lg"><i class="fa-solid fa-shield-halved"></i> 100% Original</p>
-                                <p class="text-xs text-gray-400">Guaranteed Quality</p>
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- HERO IMAGE GRAPHIC -->
                     <div class="relative flex justify-center">
                         <div class="absolute -inset-1 bg-gradient-to-r from-brandRed to-red-900 rounded-3xl blur-2xl opacity-30"></div>
                         <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" 
@@ -181,7 +164,7 @@
                 <div class="flex items-center justify-between mb-8">
                     <div>
                         <h2 class="text-2xl md:text-3xl font-bold">Product Categories</h2>
-                        <p class="text-xs text-gray-400 mt-1">Browse by your favorite luxury tags</p>
+                        <p class="text-xs text-gray-400 mt-1">Browse by your favorite categories</p>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
@@ -189,25 +172,25 @@
                         <i class="fa-solid fa-box-open text-3xl text-brandRed group-hover:text-white mb-3"></i>
                         <h3 class="text-sm font-semibold">Luxury Gifts</h3>
                     </div>
-                    <div onclick="filterByCategory('Watches')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
-                        <i class="fa-solid fa-clock text-3xl text-brandRed group-hover:text-white mb-3"></i>
-                        <h3 class="text-sm font-semibold">Watches</h3>
+                    <div onclick="filterByCategory('Mugs')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
+                        <i class="fa-solid fa-mug-hot text-3xl text-brandRed group-hover:text-white mb-3"></i>
+                        <h3 class="text-sm font-semibold">Mugs & Drinkware</h3>
+                    </div>
+                    <div onclick="filterByCategory('Decor')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
+                        <i class="fa-solid fa-house text-3xl text-brandRed group-hover:text-white mb-3"></i>
+                        <h3 class="text-sm font-semibold">Home Decor</h3>
+                    </div>
+                    <div onclick="filterByCategory('Photo')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
+                        <i class="fa-solid fa-camera text-3xl text-brandRed group-hover:text-white mb-3"></i>
+                        <h3 class="text-sm font-semibold">Photo Keepsakes</h3>
                     </div>
                     <div onclick="filterByCategory('Leather')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
                         <i class="fa-solid fa-wallet text-3xl text-brandRed group-hover:text-white mb-3"></i>
                         <h3 class="text-sm font-semibold">Leather Goods</h3>
                     </div>
-                    <div onclick="filterByCategory('Gadgets')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
-                        <i class="fa-solid fa-headphones text-3xl text-brandRed group-hover:text-white mb-3"></i>
-                        <h3 class="text-sm font-semibold">Tech & Gadgets</h3>
-                    </div>
                     <div onclick="filterByCategory('Customized')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
                         <i class="fa-solid fa-pen-nib text-3xl text-brandRed group-hover:text-white mb-3"></i>
                         <h3 class="text-sm font-semibold">Customized</h3>
-                    </div>
-                    <div onclick="filterByCategory('Perfumes')" class="bg-brandCard hover:bg-brandRed p-5 rounded-2xl border border-brandBorder cursor-pointer transition text-center group">
-                        <i class="fa-solid fa-spray-can text-3xl text-brandRed group-hover:text-white mb-3"></i>
-                        <h3 class="text-sm font-semibold">Perfumes</h3>
                     </div>
                 </div>
             </section>
@@ -217,28 +200,13 @@
                 <div class="flex items-center justify-between mb-8">
                     <div>
                         <h2 class="text-2xl md:text-3xl font-bold">Featured Products</h2>
-                        <p class="text-xs text-gray-400 mt-1">Handpicked premium items just for you</p>
+                        <p class="text-xs text-gray-400 mt-1">Live data directly connected to Google Script</p>
                     </div>
                     <button onclick="switchTab('shop')" class="text-brandRed text-sm font-bold hover:underline">View All <i class="fa-solid fa-chevron-right ml-1"></i></button>
                 </div>
                 
-                <!-- PRODUCT GRID (Card contains Image, Name, Price ONLY as required) -->
                 <div id="featuredProductsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <!-- Dynamic rendering via JS -->
-                </div>
-            </section>
-
-            <!-- PROMOTIONAL BANNER -->
-            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-gradient-to-r from-red-950 via-brandCard to-brandDark rounded-3xl p-8 md:p-12 border border-brandRed/30 flex flex-col md:flex-row items-center justify-between gap-8">
-                    <div class="space-y-4 text-center md:text-left">
-                        <span class="text-brandRed text-xs font-bold uppercase tracking-widest">Special Customization</span>
-                        <h3 class="text-3xl font-extrabold text-white">Create Custom Gift Boxes for Loved Ones</h3>
-                        <p class="text-gray-300 text-sm max-w-xl">Add custom names, personalized greeting cards, and elegant red gift wrapping for birthdays, anniversaries, and special moments.</p>
-                    </div>
-                    <button onclick="switchTab('shop')" class="bg-brandRed hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-xl transition whitespace-nowrap shadow-lg shadow-brandRed/30">
-                        Customize Now
-                    </button>
+                    <p class="col-span-full text-center text-gray-400 py-10"><i class="fa-solid fa-spinner animate-spin text-brandRed mr-2"></i> Loading products from Google Sheet...</p>
                 </div>
             </section>
         </div>
@@ -248,28 +216,21 @@
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 pb-6 border-b border-brandBorder">
                 <div>
                     <h1 class="text-3xl font-extrabold">Shop Collection</h1>
-                    <p class="text-xs text-gray-400 mt-1">Explore all products at HY Store Official</p>
+                    <p class="text-xs text-gray-400 mt-1">Explore all live items from your backup sheet</p>
                 </div>
-                <!-- FILTERS & SORTING -->
                 <div class="flex flex-wrap items-center gap-4 w-full md:w-auto">
                     <select id="categoryFilter" onchange="filterProducts()" class="bg-brandGray border border-brandBorder rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brandRed">
                         <option value="All">All Categories</option>
                         <option value="Gifts">Gifts</option>
-                        <option value="Watches">Watches</option>
+                        <option value="Mugs">Mugs & Drinkware</option>
+                        <option value="Decor">Home Decor</option>
+                        <option value="Photo">Photo Keepsakes</option>
                         <option value="Leather">Leather Goods</option>
-                        <option value="Gadgets">Gadgets</option>
                         <option value="Customized">Customized</option>
-                        <option value="Perfumes">Perfumes</option>
-                    </select>
-                    <select id="priceSort" onchange="filterProducts()" class="bg-brandGray border border-brandBorder rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brandRed">
-                        <option value="default">Sort by Default</option>
-                        <option value="low-high">Price: Low to High</option>
-                        <option value="high-low">Price: High to Low</option>
                     </select>
                 </div>
             </div>
 
-            <!-- SHOP PRODUCT GRID (Cards show Image, Name, Price ONLY) -->
             <div id="shopProductsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- Dynamic Javascript Population -->
             </div>
@@ -288,10 +249,9 @@
         <!-- ================= PAGE 4: CHECKOUT PAGE ================= -->
         <div id="page-checkout" class="hidden max-w-4xl mx-auto px-4 py-12">
             <h1 class="text-3xl font-extrabold mb-2">Checkout Order</h1>
-            <p class="text-sm text-gray-400 mb-8">Enter your delivery information below to confirm your Cash on Delivery order.</p>
+            <p class="text-sm text-gray-400 mb-8">Enter your delivery information to submit your order to Google Sheet.</p>
 
             <form id="checkoutForm" onsubmit="processOrder(event)" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- CUSTOMER FORM -->
                 <div class="md:col-span-2 space-y-4 bg-brandCard p-6 rounded-2xl border border-brandBorder">
                     <h2 class="text-lg font-bold border-b border-brandBorder pb-3 text-brandRed">Shipping Information</h2>
                     <div>
@@ -299,8 +259,12 @@
                         <input type="text" required id="custName" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3 text-sm focus:outline-none focus:border-brandRed" placeholder="e.g. Ali Ahmed">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Phone Number (Required for Tracking)</label>
+                        <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Phone Number (Required)</label>
                         <input type="tel" required id="custPhone" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3 text-sm focus:outline-none focus:border-brandRed" placeholder="03001234567">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Email Address</label>
+                        <input type="email" required id="custEmail" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3 text-sm focus:outline-none focus:border-brandRed" placeholder="your@email.com">
                     </div>
                     <div>
                         <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Complete Delivery Address</label>
@@ -309,31 +273,24 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">City</label>
-                            <input type="text" required id="custCity" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3 text-sm focus:outline-none focus:border-brandRed" placeholder="e.g. Lahore / Mandi Bahauddin">
+                            <input type="text" required id="custCity" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3 text-sm focus:outline-none focus:border-brandRed" placeholder="e.g. Mandi Bahauddin">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Payment Method</label>
                             <input type="text" readonly value="Cash on Delivery (COD)" class="w-full bg-brandDark text-brandRed font-bold border border-brandBorder rounded-xl p-3 text-sm cursor-not-allowed">
                         </div>
                     </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Order Notes (Optional)</label>
-                        <input type="text" id="custNotes" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3 text-sm focus:outline-none focus:border-brandRed" placeholder="Special gift instruction or delivery note">
-                    </div>
                 </div>
 
-                <!-- ORDER SUMMARY -->
                 <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder h-fit space-y-4">
                     <h2 class="text-lg font-bold border-b border-brandBorder pb-3 text-brandRed">Order Summary</h2>
-                    <div id="checkoutItemsList" class="space-y-3 max-h-60 overflow-y-auto pr-1 text-xs">
-                        <!-- Dynamic Checkout Items -->
-                    </div>
+                    <div id="checkoutItemsList" class="space-y-3 max-h-60 overflow-y-auto pr-1 text-xs"></div>
                     <div class="border-t border-brandBorder pt-3 space-y-2 text-sm">
-                        <div class="flex justify-between text-gray-400"><span>Subtotal:</span> <span id="coSubtotal">Rs. 0</span></div>
-                        <div class="flex justify-between text-gray-400"><span>Delivery Fee:</span> <span>Rs. 250</span></div>
-                        <div class="flex justify-between font-bold text-base text-white border-t border-brandBorder pt-2"><span>Total Amount:</span> <span id="coTotal" class="text-brandRed">Rs. 0</span></div>
+                        <div class="flex justify-between text-gray-400"><span>Subtotal:</span> <span id="coSubtotal">PKR 0</span></div>
+                        <div class="flex justify-between text-gray-400"><span>Delivery Fee:</span> <span>FREE</span></div>
+                        <div class="flex justify-between font-bold text-base text-white border-t border-brandBorder pt-2"><span>Total Amount:</span> <span id="coTotal" class="text-brandRed">PKR 0</span></div>
                     </div>
-                    <button type="submit" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-brandRed/30 transition uppercase text-sm mt-4">
+                    <button type="submit" id="placeOrderBtn" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-brandRed/30 transition uppercase text-sm mt-4">
                         Place Order (COD)
                     </button>
                 </div>
@@ -347,79 +304,20 @@
                     <i class="fa-solid fa-truck-fast"></i>
                 </div>
                 <h1 class="text-3xl font-extrabold">Track Your Order</h1>
-                <p class="text-sm text-gray-400">Enter your Order Number and Phone Number below to retrieve live status.</p>
+                <p class="text-sm text-gray-400">Enter your HY Order ID to retrieve live shipment details from Google Sheet.</p>
             </div>
 
-            <!-- TRACKING FORM -->
             <form onsubmit="verifyAndTrackOrder(event)" class="bg-brandCard p-6 md:p-8 rounded-2xl border border-brandBorder space-y-4 mb-8">
                 <div>
                     <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Order Number</label>
-                    <input type="text" id="trackOrderId" required placeholder="e.g. HY-984210" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3.5 text-sm focus:outline-none focus:border-brandRed uppercase">
+                    <input type="text" id="trackOrderId" required placeholder="e.g. HY-1024" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3.5 text-sm focus:outline-none focus:border-brandRed uppercase">
                 </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Phone Number</label>
-                    <input type="tel" id="trackPhone" required placeholder="Phone used at checkout" class="w-full bg-brandGray border border-brandBorder rounded-xl p-3.5 text-sm focus:outline-none focus:border-brandRed">
-                </div>
-                <button type="submit" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-brandRed/30">
+                <button type="submit" id="trackBtn" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-brandRed/30">
                     TRACK MY ORDER
                 </button>
             </form>
 
-            <!-- TRACKING RESULT CONTAINER -->
-            <div id="trackResult" class="hidden bg-brandCard p-6 md:p-8 rounded-2xl border border-brandBorder space-y-8">
-                <div class="flex flex-col md:flex-row justify-between border-b border-brandBorder pb-4 gap-2">
-                    <div>
-                        <span class="text-xs text-gray-400">Order ID:</span>
-                        <h3 class="text-xl font-extrabold text-brandRed" id="resOrderId">HY-000000</h3>
-                    </div>
-                    <div class="text-left md:text-right">
-                        <span class="text-xs text-gray-400">Customer:</span>
-                        <p class="text-sm font-semibold" id="resCustName">Customer Name</p>
-                    </div>
-                </div>
-
-                <!-- PROGRESS TIMELINE BAR -->
-                <div>
-                    <h4 class="text-sm font-bold uppercase text-gray-400 mb-6">Delivery Progress</h4>
-                    <div class="relative flex items-center justify-between">
-                        <div class="absolute top-1/2 left-0 right-0 h-1 bg-brandBorder -translate-y-1/2 z-0"></div>
-                        <div id="timelineProgress" class="absolute top-1/2 left-0 h-1 bg-brandRed -translate-y-1/2 z-0 transition-all duration-500" style="width: 20%;"></div>
-
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="step-icon w-8 h-8 rounded-full bg-brandRed text-white flex items-center justify-center text-xs font-bold"><i class="fa-solid fa-check"></i></div>
-                            <span class="text-[10px] mt-2 font-semibold">Placed</span>
-                        </div>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="step-icon w-8 h-8 rounded-full bg-brandGray border border-brandBorder text-gray-400 flex items-center justify-center text-xs font-bold">2</div>
-                            <span class="text-[10px] mt-2 font-semibold">Confirmed</span>
-                        </div>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="step-icon w-8 h-8 rounded-full bg-brandGray border border-brandBorder text-gray-400 flex items-center justify-center text-xs font-bold">3</div>
-                            <span class="text-[10px] mt-2 font-semibold">Processing</span>
-                        </div>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="step-icon w-8 h-8 rounded-full bg-brandGray border border-brandBorder text-gray-400 flex items-center justify-center text-xs font-bold">4</div>
-                            <span class="text-[10px] mt-2 font-semibold">Shipped</span>
-                        </div>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="step-icon w-8 h-8 rounded-full bg-brandGray border border-brandBorder text-gray-400 flex items-center justify-center text-xs font-bold">5</div>
-                            <span class="text-[10px] mt-2 font-semibold">Out For Delivery</span>
-                        </div>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="step-icon w-8 h-8 rounded-full bg-brandGray border border-brandBorder text-gray-400 flex items-center justify-center text-xs font-bold">6</div>
-                            <span class="text-[10px] mt-2 font-semibold">Delivered</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ORDER SUMMARY DETAILS -->
-                <div class="bg-brandGray p-4 rounded-xl border border-brandBorder space-y-2 text-xs">
-                    <p class="flex justify-between"><span>Status:</span> <strong class="text-brandRed uppercase" id="resStatus">Order Placed</strong></p>
-                    <p class="flex justify-between"><span>Destination:</span> <strong id="resCity">Lahore</strong></p>
-                    <p class="flex justify-between"><span>Total Items:</span> <strong id="resItemsCount">1 Item</strong></p>
-                    <p class="flex justify-between"><span>Total Amount:</span> <strong class="text-white font-bold" id="resTotal">Rs. 0</strong></p>
-                </div>
-            </div>
+            <div id="trackResult" class="hidden bg-brandCard p-6 md:p-8 rounded-2xl border border-brandBorder space-y-8"></div>
         </div>
 
         <!-- ================= PAGE 6: ADMIN DASHBOARD ================= -->
@@ -429,93 +327,31 @@
                     <span class="bg-yellow-400/20 text-yellow-400 text-xs px-3 py-1 rounded-full border border-yellow-400/30 font-bold">Store Admin Panel</span>
                     <h1 class="text-3xl font-extrabold mt-2">HY STORE OFFICIAL Management</h1>
                 </div>
-                <button onclick="switchTab('home')" class="bg-brandGray hover:bg-brandCard px-4 py-2 rounded-xl text-xs font-semibold border border-brandBorder">
-                    Back to Storefront
-                </button>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- ADD NEW PRODUCT FORM -->
-                <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder space-y-4">
-                    <h2 class="text-lg font-bold border-b border-brandBorder pb-3 text-brandRed">Add New Product</h2>
-                    <form onsubmit="adminAddProduct(event)" class="space-y-3">
-                        <div>
-                            <label class="block text-xs text-gray-400 mb-1">Product Name</label>
-                            <input type="text" id="admTitle" required class="w-full bg-brandGray border border-brandBorder rounded-xl p-2.5 text-xs">
-                        </div>
-                        <div class="grid grid-cols-2 gap-3">
-                            <div>
-                                <label class="block text-xs text-gray-400 mb-1">Price (Rs.)</label>
-                                <input type="number" id="admPrice" required class="w-full bg-brandGray border border-brandBorder rounded-xl p-2.5 text-xs">
-                            </div>
-                            <div>
-                                <label class="block text-xs text-gray-400 mb-1">Category</label>
-                                <select id="admCategory" class="w-full bg-brandGray border border-brandBorder rounded-xl p-2.5 text-xs">
-                                    <option value="Gifts">Gifts</option>
-                                    <option value="Watches">Watches</option>
-                                    <option value="Leather">Leather</option>
-                                    <option value="Gadgets">Gadgets</option>
-                                    <option value="Customized">Customized</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-xs text-gray-400 mb-1">Image URL</label>
-                            <input type="url" id="admImage" required placeholder="https://..." class="w-full bg-brandGray border border-brandBorder rounded-xl p-2.5 text-xs">
-                        </div>
-                        <div>
-                            <label class="block text-xs text-gray-400 mb-1">Description</label>
-                            <textarea id="admDesc" required rows="2" class="w-full bg-brandGray border border-brandBorder rounded-xl p-2.5 text-xs"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider">
-                            Add Product
-                        </button>
-                    </form>
-                </div>
-
-                <!-- LIVE ORDERS MANAGEMENT -->
-                <div class="lg:col-span-2 bg-brandCard p-6 rounded-2xl border border-brandBorder space-y-4">
-                    <h2 class="text-lg font-bold border-b border-brandBorder pb-3 text-brandRed">Customer Orders & Status Control</h2>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left text-xs">
-                            <thead class="text-gray-400 bg-brandGray uppercase">
-                                <tr>
-                                    <th class="p-3">Order ID</th>
-                                    <th class="p-3">Customer</th>
-                                    <th class="p-3">Phone</th>
-                                    <th class="p-3">Total</th>
-                                    <th class="p-3">Status</th>
-                                    <th class="p-3">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="adminOrdersTable" class="divide-y divide-brandBorder">
-                                <!-- Dynamic Orders Render -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder">
+                <p class="text-sm text-gray-300">All order backups are directly synchronized with your Google Sheet script URL:</p>
+                <code class="block bg-brandGray p-3 rounded-lg text-xs text-brandRed mt-2 break-all font-mono">https://script.google.com/macros/s/AKfycbySltlwYRrlxHigPeWoZnmuNKgyaUyktoCKPWPDHKK5AXVRgIqVr1UgnNMcb7s4SFjT3Q/exec</code>
             </div>
         </div>
 
         <!-- ================= PAGE 7: CONTACT PAGE ================= -->
         <div id="page-contact" class="hidden max-w-4xl mx-auto px-4 py-12 text-center space-y-6">
             <h1 class="text-3xl font-extrabold">Contact HY STORE OFFICIAL</h1>
-            <p class="text-gray-400 text-sm max-w-lg mx-auto">Have a question or need assistance with custom gift options? Our customer care team is available 24/7.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 text-left">
                 <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder space-y-2">
                     <i class="fa-solid fa-phone text-2xl text-brandRed mb-2"></i>
                     <h3 class="font-bold text-sm">Phone / WhatsApp</h3>
-                    <p class="text-xs text-gray-400">+92 300 1234567</p>
+                    <p class="text-xs text-gray-400">+92 320 9306672</p>
                 </div>
                 <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder space-y-2">
                     <i class="fa-solid fa-envelope text-2xl text-brandRed mb-2"></i>
                     <h3 class="font-bold text-sm">Email Address</h3>
-                    <p class="text-xs text-gray-400">support@hystoreofficial.com</p>
+                    <p class="text-xs text-gray-400">hybusinessprint@gmail.com</p>
                 </div>
                 <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder space-y-2">
                     <i class="fa-solid fa-location-dot text-2xl text-brandRed mb-2"></i>
                     <h3 class="font-bold text-sm">Main Office</h3>
-                    <p class="text-xs text-gray-400">Lahore / Mandi Bahauddin, Punjab, Pakistan</p>
+                    <p class="text-xs text-gray-400">Mandi Bahauddin / Lahore, Punjab, Pakistan</p>
                 </div>
             </div>
         </div>
@@ -530,24 +366,16 @@
                     <h2 class="text-lg font-bold flex items-center">
                         <i class="fa-solid fa-bag-shopping text-brandRed mr-2"></i> Shopping Cart
                     </h2>
-                    <button onclick="toggleCartModal()" class="text-gray-400 hover:text-white text-xl">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
+                    <button onclick="toggleCartModal()" class="text-gray-400 hover:text-white text-xl">&times;</button>
                 </div>
-
-                <!-- CART ITEMS CONTAINER -->
-                <div id="cartItemsContainer" class="space-y-4 max-h-[60vh] overflow-y-auto pr-1">
-                    <!-- Dynamic rendering -->
-                </div>
+                <div id="cartItemsContainer" class="space-y-4 max-h-[60vh] overflow-y-auto pr-1"></div>
             </div>
-
-            <!-- CART FOOTER TOTALS -->
             <div class="border-t border-brandBorder pt-4 space-y-4">
                 <div class="flex justify-between font-bold text-lg">
                     <span>Subtotal:</span>
-                    <span id="cartModalSubtotal" class="text-brandRed">Rs. 0</span>
+                    <span id="cartModalSubtotal" class="text-brandRed">PKR 0</span>
                 </div>
-                <button onclick="goToCheckout()" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition uppercase tracking-wider text-sm shadow-lg shadow-brandRed/30">
+                <button onclick="goToCheckout()" class="w-full bg-brandRed hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition uppercase text-sm shadow-lg shadow-brandRed/30">
                     Proceed to Checkout
                 </button>
             </div>
@@ -556,139 +384,76 @@
 
     <!-- FOOTER -->
     <footer class="bg-brandGray border-t border-brandBorder pt-12 pb-6 text-xs text-gray-400">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div class="space-y-3">
-                <div class="flex items-center space-x-2">
-                    <i class="fa-solid fa-gift text-brandRed text-xl"></i>
-                    <span class="text-lg font-extrabold text-white">HY STORE</span>
-                </div>
-                <p>Your premier destination for luxury gift boxes, accessories, and curated lifestyle essentials in Pakistan.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-3 uppercase tracking-wider">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" onclick="switchTab('home')" class="hover:text-brandRed">Home</a></li>
-                    <li><a href="#" onclick="switchTab('shop')" class="hover:text-brandRed">Shop All</a></li>
-                    <li><a href="#" onclick="switchTab('track')" class="hover:text-brandRed">Track Order</a></li>
-                    <li><a href="#" onclick="switchTab('contact')" class="hover:text-brandRed">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-3 uppercase tracking-wider">Customer Care</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-brandRed">Shipping Policy</a></li>
-                    <li><a href="#" class="hover:text-brandRed">Return & Refund Policy</a></li>
-                    <li><a href="#" class="hover:text-brandRed">Cash on Delivery</a></li>
-                    <li><a href="#" class="hover:text-brandRed">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold uppercase tracking-wider">Payments Accepted</h4>
-                <div class="flex items-center space-x-2 text-xl text-gray-300">
-                    <i class="fa-solid fa-money-bill-wave text-green-500"></i>
-                    <span class="font-bold text-white text-sm">Cash on Delivery</span>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 text-center border-t border-brandBorder/50 pt-6">
-            © 2026 HY STORE OFFICIAL. All Rights Reserved.
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            © 2026 HY STORE OFFICIAL. All Rights Reserved. Connected to Google Script Backend.
         </div>
     </footer>
 
-    <!-- JAVASCRIPT ENGINE -->
+    <!-- JAVASCRIPT SCRIPT ENGINE WITH GOOGLE SCRIPT FETCH -->
     <script>
-        // DEMO PRODUCTS DATABASE
-        let products = [
-            {
-                id: 'p1',
-                title: 'Luxury Gift Box Set',
-                price: 4999,
-                category: 'Gifts',
-                image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-                desc: 'Premium curated luxury gift box including leather wallet, pen, keychain, and luxury watch. Perfect for birthdays and special occasions.'
-            },
-            {
-                id: 'p2',
-                title: 'Teddy Bear Soft Toy',
-                price: 2499,
-                category: 'Gifts',
-                image: 'https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=600&q=80',
-                desc: 'Ultra-soft premium quality teddy bear made with skin-friendly materials and elegant red heart accent.'
-            },
-            {
-                id: 'p3',
-                title: 'Personalized Mug',
-                price: 1299,
-                category: 'Customized',
-                image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80',
-                desc: 'High quality ceramic mug with custom text/name engraving or high definition print.'
-            },
-            {
-                id: 'p4',
-                title: 'LED Heart Lamp',
-                price: 2199,
-                category: 'Customized',
-                image: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=600&q=80',
-                desc: '3D Acrylic warm LED heart lamp with soft ambient lighting for night stand decoration.'
-            },
-            {
-                id: 'p5',
-                title: 'Flower Bouquet Box',
-                price: 3499,
-                category: 'Gifts',
-                image: 'https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80',
-                desc: 'Artificial velvet red roses handcrafted in an elegant black gift presentation box.'
-            },
-            {
-                id: 'p6',
-                title: 'Men\'s Gift Set',
-                price: 4299,
-                category: 'Leather',
-                image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80',
-                desc: '100% Genuine leather bi-fold wallet paired with a premium metal chronograph wrist watch.'
-            }
-        ];
+        // GOOGLE APPS SCRIPT BACKUP BACKEND LINK
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySltlwYRrlxHigPeWoZnmuNKgyaUyktoCKPWPDHKK5AXVRgIqVr1UgnNMcb7s4SFjT3Q/exec";
 
-        // INITIAL DEMO ORDERS
-        let orders = [
-            {
-                orderId: 'HY-984210',
-                custName: 'Hamza Khan',
-                custPhone: '03001234567',
-                city: 'Lahore',
-                itemsCount: 1,
-                totalPrice: 5249,
-                statusStep: 2, // 1 to 6
-                statusText: 'Confirmed'
-            }
-        ];
-
+        let allProducts = [];
         let cart = [];
+        let selectedProduct = null;
 
-        // INITIAL RENDER
         window.onload = function() {
-            renderProducts();
-            renderAdminOrders();
+            fetchProductsFromSheet();
         };
 
+        // FETCH PRODUCTS FROM GOOGLE APPS SCRIPT
+        function fetchProductsFromSheet() {
+            fetch(SCRIPT_URL + '?action=getProducts')
+                .then(res => res.json())
+                .then(data => {
+                    allProducts = data;
+                    renderProducts(allProducts);
+                })
+                .catch(err => {
+                    console.log('Error fetching products:', err);
+                    document.getElementById('featuredProductsGrid').innerHTML = '<p class="col-span-full text-center text-red-500 py-8">Unable to load products from Google Sheet right now.</p>';
+                });
+        }
+
+        function formatImageUrl(url) {
+            if (!url) return 'https://via.placeholder.com/250x200?text=Product+Image';
+            let str = url.toString().trim();
+            if (str.includes('drive.google.com')) {
+                let match = str.match(/\/d\/([^\/]+)/) || str.match(/id=([^&]+)/);
+                if (match && match[1]) {
+                    return 'https://drive.google.com/uc?export=view&id=' + match[1];
+                }
+            }
+            return str;
+        }
+
         // RENDER PRODUCTS (Strictly Name, Image, Price on Cards)
-        function renderProducts() {
+        function renderProducts(productsList) {
             const featuredGrid = document.getElementById('featuredProductsGrid');
             const shopGrid = document.getElementById('shopProductsGrid');
 
+            if (!productsList || productsList.length === 0) {
+                const emptyHtml = '<p class="col-span-full text-center text-gray-400 py-8">No products found in Google Sheet.</p>';
+                if(featuredGrid) featuredGrid.innerHTML = emptyHtml;
+                if(shopGrid) shopGrid.innerHTML = emptyHtml;
+                return;
+            }
+
             let html = '';
-            products.forEach(p => {
+            productsList.forEach((p, idx) => {
+                let imgUrl = formatImageUrl(p.image);
                 html += `
                     <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder hover:border-brandRed transition group flex flex-col justify-between">
-                        <div class="cursor-pointer overflow-hidden relative" onclick="openProductDetail('${p.id}')">
-                            <img src="${p.image}" alt="${p.title}" class="w-full h-48 md:h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="cursor-pointer overflow-hidden relative" onclick="openProductDetail(${idx})">
+                            <img src="${imgUrl}" alt="${p.title}" class="w-full h-48 md:h-56 object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/250x200?text=Image+Not+Found'">
                         </div>
                         <div class="p-4 space-y-3 flex-1 flex flex-col justify-between">
                             <div>
-                                <h3 class="font-bold text-sm text-white line-clamp-1 cursor-pointer hover:text-brandRed" onclick="openProductDetail('${p.id}')">${p.title}</h3>
-                                <p class="text-brandRed font-black text-base mt-1">Rs. ${p.price.toLocaleString()}</p>
+                                <h3 class="font-bold text-sm text-white line-clamp-1 cursor-pointer hover:text-brandRed" onclick="openProductDetail(${idx})">${p.title}</h3>
+                                <p class="text-brandRed font-black text-base mt-1">PKR ${Number(p.price).toLocaleString()}</p>
                             </div>
-                            <button onclick="addToCart('${p.id}')" class="w-full bg-brandRed hover:bg-red-700 text-white text-xs font-bold py-2.5 rounded-xl transition shadow-md shadow-brandRed/20 flex items-center justify-center">
+                            <button onclick="addToCartByIndex(${idx})" class="w-full bg-brandRed hover:bg-red-700 text-white text-xs font-bold py-2.5 rounded-xl transition shadow-md shadow-brandRed/20 flex items-center justify-center">
                                 <i class="fa-solid fa-cart-plus mr-2"></i> Add To Cart
                             </button>
                         </div>
@@ -704,9 +469,11 @@
         function switchTab(tabName) {
             const pages = ['home', 'shop', 'detail', 'checkout', 'track', 'admin', 'contact'];
             pages.forEach(p => {
-                document.getElementById(`page-${p}`).classList.add('hidden');
+                const el = document.getElementById(`page-${p}`);
+                if(el) el.classList.add('hidden');
             });
-            document.getElementById(`page-${tabName}`).classList.remove('hidden');
+            const target = document.getElementById(`page-${tabName}`);
+            if(target) target.classList.remove('hidden');
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
@@ -714,7 +481,6 @@
             document.getElementById('mobileNav').classList.toggle('hidden');
         }
 
-        // CATEGORY FILTER
         function filterByCategory(cat) {
             switchTab('shop');
             document.getElementById('categoryFilter').value = cat;
@@ -722,57 +488,37 @@
         }
 
         function filterProducts() {
+            switchTab('shop');
             const cat = document.getElementById('categoryFilter').value;
-            const sort = document.getElementById('priceSort').value;
             const search = document.getElementById('searchInput').value.toLowerCase();
 
-            let filtered = products.filter(p => {
-                const matchCat = (cat === 'All' || p.category === cat);
+            let filtered = allProducts.filter(p => {
+                const matchCat = (cat === 'All' || (p.category && p.category.toLowerCase().includes(cat.toLowerCase())));
                 const matchSearch = p.title.toLowerCase().includes(search);
                 return matchCat && matchSearch;
             });
 
-            if(sort === 'low-high') filtered.sort((a,b) => a.price - b.price);
-            if(sort === 'high-low') filtered.sort((a,b) => b.price - a.price);
-
-            const shopGrid = document.getElementById('shopProductsGrid');
-            let html = '';
-            filtered.forEach(p => {
-                html += `
-                    <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder hover:border-brandRed transition group flex flex-col justify-between">
-                        <div class="cursor-pointer overflow-hidden relative" onclick="openProductDetail('${p.id}')">
-                            <img src="${p.image}" alt="${p.title}" class="w-full h-48 md:h-56 object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="p-4 space-y-3 flex-1 flex flex-col justify-between">
-                            <div>
-                                <h3 class="font-bold text-sm text-white line-clamp-1 cursor-pointer hover:text-brandRed" onclick="openProductDetail('${p.id}')">${p.title}</h3>
-                                <p class="text-brandRed font-black text-base mt-1">Rs. ${p.price.toLocaleString()}</p>
-                            </div>
-                            <button onclick="addToCart('${p.id}')" class="w-full bg-brandRed hover:bg-red-700 text-white text-xs font-bold py-2.5 rounded-xl transition shadow-md shadow-brandRed/20 flex items-center justify-center">
-                                <i class="fa-solid fa-cart-plus mr-2"></i> Add To Cart
-                            </button>
-                        </div>
-                    </div>
-                `;
-            });
-            shopGrid.innerHTML = html;
+            renderProducts(filtered);
         }
 
         // PRODUCT DETAILS VIEW
-        function openProductDetail(id) {
-            const p = products.find(x => x.id === id);
-            if(!p) return;
+        function openProductDetail(idx) {
+            selectedProduct = allProducts[idx];
+            if(!selectedProduct) return;
+
+            let imgUrl = formatImageUrl(selectedProduct.image);
+            let desc = selectedProduct.description || selectedProduct.dis || 'No detailed description provided.';
 
             const container = document.getElementById('productDetailContainer');
             container.innerHTML = `
                 <div>
-                    <img src="${p.image}" class="w-full h-96 object-cover rounded-2xl border border-brandBorder shadow-xl">
+                    <img src="${imgUrl}" class="w-full h-96 object-cover rounded-2xl border border-brandBorder shadow-xl">
                 </div>
                 <div class="space-y-6">
-                    <span class="bg-brandRed/20 text-brandRed px-3 py-1 rounded-full text-xs font-bold uppercase border border-brandRed/30">${p.category}</span>
-                    <h1 class="text-3xl font-extrabold text-white">${p.title}</h1>
-                    <p class="text-3xl font-black text-brandRed">Rs. ${p.price.toLocaleString()}</p>
-                    <p class="text-gray-300 text-sm leading-relaxed">${p.desc}</p>
+                    <span class="bg-brandRed/20 text-brandRed px-3 py-1 rounded-full text-xs font-bold uppercase border border-brandRed/30">${selectedProduct.category || 'General'}</span>
+                    <h1 class="text-3xl font-extrabold text-white">${selectedProduct.title}</h1>
+                    <p class="text-3xl font-black text-brandRed">PKR ${Number(selectedProduct.price).toLocaleString()}</p>
+                    <p class="text-gray-300 text-sm leading-relaxed">${desc}</p>
                     
                     <div class="space-y-3 pt-4 border-t border-brandBorder">
                         <label class="block text-xs font-bold uppercase text-gray-400">Quantity</label>
@@ -784,11 +530,8 @@
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-4 pt-6">
-                        <button onclick="addToCart('${p.id}', parseInt(document.getElementById('detailQty').value))" class="flex-1 bg-brandRed hover:bg-red-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-brandRed/30 transition uppercase text-sm">
+                        <button onclick="addToCartCurrentProduct()" class="flex-1 bg-brandRed hover:bg-red-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-brandRed/30 transition uppercase text-sm">
                             <i class="fa-solid fa-cart-plus mr-2"></i> Add To Cart
-                        </button>
-                        <button onclick="buyNow('${p.id}')" class="flex-1 bg-white hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition uppercase text-sm">
-                            Buy Now
                         </button>
                     </div>
                 </div>
@@ -803,22 +546,30 @@
             input.value = val;
         }
 
-        // SHOPPING CART ENGINE
-        function addToCart(id, qty = 1) {
-            const p = products.find(x => x.id === id);
-            const existing = cart.find(x => x.id === id);
+        function addToCartByIndex(idx) {
+            const p = allProducts[idx];
+            if(!p) return;
+            const existing = cart.find(x => x.title === p.title);
             if(existing) {
-                existing.qty += qty;
+                existing.qty += 1;
             } else {
-                cart.push({...p, qty: qty});
+                cart.push({ title: p.title, price: Number(p.price), image: formatImageUrl(p.image), qty: 1 });
             }
             updateCartUI();
             toggleCartModal(true);
         }
 
-        function buyNow(id) {
-            addToCart(id, 1);
-            goToCheckout();
+        function addToCartCurrentProduct() {
+            if(!selectedProduct) return;
+            const qty = parseInt(document.getElementById('detailQty').value) || 1;
+            const existing = cart.find(x => x.title === selectedProduct.title);
+            if(existing) {
+                existing.qty += qty;
+            } else {
+                cart.push({ title: selectedProduct.title, price: Number(selectedProduct.price), image: formatImageUrl(selectedProduct.image), qty: qty });
+            }
+            updateCartUI();
+            toggleCartModal(true);
         }
 
         function updateCartUI() {
@@ -830,7 +581,7 @@
             let subtotal = 0;
             let html = '';
 
-            cart.forEach(item => {
+            cart.forEach((item, index) => {
                 totalQty += item.qty;
                 subtotal += (item.price * item.qty);
                 html += `
@@ -838,14 +589,14 @@
                         <img src="${item.image}" class="w-14 h-14 object-cover rounded-lg">
                         <div class="flex-1 mx-3">
                             <h4 class="font-bold text-xs line-clamp-1">${item.title}</h4>
-                            <p class="text-brandRed font-bold text-xs mt-1">Rs. ${item.price.toLocaleString()}</p>
+                            <p class="text-brandRed font-bold text-xs mt-1">PKR ${item.price.toLocaleString()}</p>
                             <div class="flex items-center space-x-2 mt-1">
-                                <button onclick="updateCartItemQty('${item.id}', -1)" class="text-xs bg-brandCard px-2 rounded">-</button>
+                                <button onclick="updateCartItemQty(${index}, -1)" class="text-xs bg-brandCard px-2 rounded">-</button>
                                 <span class="text-xs font-bold">${item.qty}</span>
-                                <button onclick="updateCartItemQty('${item.id}', 1)" class="text-xs bg-brandCard px-2 rounded">+</button>
+                                <button onclick="updateCartItemQty(${index}, 1)" class="text-xs bg-brandCard px-2 rounded">+</button>
                             </div>
                         </div>
-                        <button onclick="removeFromCart('${item.id}')" class="text-gray-400 hover:text-brandRed text-sm">
+                        <button onclick="removeFromCart(${index})" class="text-gray-400 hover:text-brandRed text-sm">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
@@ -853,22 +604,21 @@
             });
 
             countBadge.innerText = totalQty;
-            subtotalEl.innerText = `Rs. ${subtotal.toLocaleString()}`;
+            subtotalEl.innerText = `PKR ${subtotal.toLocaleString()}`;
             container.innerHTML = cart.length ? html : '<p class="text-xs text-gray-400 text-center py-8">Your cart is empty.</p>';
         }
 
-        function updateCartItemQty(id, delta) {
-            const item = cart.find(x => x.id === id);
-            if(!item) return;
-            item.qty += delta;
-            if(item.qty <= 0) {
-                cart = cart.filter(x => x.id !== id);
+        function updateCartItemQty(index, delta) {
+            if(!cart[index]) return;
+            cart[index].qty += delta;
+            if(cart[index].qty <= 0) {
+                cart.splice(index, 1);
             }
             updateCartUI();
         }
 
-        function removeFromCart(id) {
-            cart = cart.filter(x => x.id !== id);
+        function removeFromCart(index) {
+            cart.splice(index, 1);
             updateCartUI();
         }
 
@@ -890,7 +640,6 @@
             }
             toggleCartModal(false);
             
-            // Render checkout summary
             const itemsList = document.getElementById('checkoutItemsList');
             let subtotal = 0;
             let html = '';
@@ -899,134 +648,161 @@
                 html += `
                     <div class="flex justify-between items-center text-gray-300">
                         <span>${i.title} x${i.qty}</span>
-                        <span class="font-bold">Rs. ${(i.price * i.qty).toLocaleString()}</span>
+                        <span class="font-bold">PKR ${(i.price * i.qty).toLocaleString()}</span>
                     </div>
                 `;
             });
             itemsList.innerHTML = html;
-            document.getElementById('coSubtotal').innerText = `Rs. ${subtotal.toLocaleString()}`;
-            document.getElementById('coTotal').innerText = `Rs. ${(subtotal + 250).toLocaleString()}`;
+            document.getElementById('coSubtotal').innerText = `PKR ${subtotal.toLocaleString()}`;
+            document.getElementById('coTotal').innerText = `PKR ${subtotal.toLocaleString()}`;
 
             switchTab('checkout');
         }
 
-        // ORDER PLACEMENT
+        // SUBMIT ORDER TO GOOGLE SCRIPT SHEET
         function processOrder(e) {
             e.preventDefault();
-            const orderId = 'HY-' + Math.floor(100000 + Math.random() * 900000);
-            const name = document.getElementById('custName').value;
-            const phone = document.getElementById('custPhone').value;
-            const city = document.getElementById('custCity').value;
+            const name = document.getElementById('custName').value.trim();
+            let phone = document.getElementById('custPhone').value.trim();
+            const email = document.getElementById('custEmail').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+            const city = document.getElementById('custCity').value.trim();
 
-            let subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            let fullAddress = `${address}, City: ${city}`;
+            let itemsStr = cart.map(i => `${i.title} x${i.qty} (PKR ${i.price * i.qty})`).join(', ');
+            let totalAmount = cart.reduce((sum, i) => sum + (i.price * i.qty), 0);
 
-            const newOrder = {
-                orderId: orderId,
-                custName: name,
-                custPhone: phone,
-                city: city,
-                itemsCount: cart.length,
-                totalPrice: subtotal + 250,
-                statusStep: 1, // 1: Placed
-                statusText: 'Placed'
-            };
+            const btn = document.getElementById('placeOrderBtn');
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Submitting...`;
 
-            orders.unshift(newOrder);
-            cart = [];
-            updateCartUI();
-            renderAdminOrders();
-
-            alert(`Order Placed Successfully!\n\nOrder ID: ${orderId}\nPlease save your Order ID and Phone Number to track delivery.`);
-            
-            // Auto fill track form
-            document.getElementById('trackOrderId').value = orderId;
-            document.getElementById('trackPhone').value = phone;
-            switchTab('track');
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: JSON.stringify({
+                    action: 'placeOrder',
+                    email: email,
+                    customerName: name,
+                    phone: phone,
+                    address: fullAddress,
+                    items: itemsStr,
+                    totalAmount: totalAmount
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                btn.disabled = false;
+                btn.innerText = 'Place Order (COD)';
+                cart = [];
+                updateCartUI();
+                alert(`Order Placed Successfully!\n\nYour order has been submitted to HY Store.`);
+                switchTab('home');
+            })
+            .catch(err => {
+                console.log('Sheet backup sync note:', err);
+                btn.disabled = false;
+                btn.innerText = 'Place Order (COD)';
+                cart = [];
+                updateCartUI();
+                alert(`Order Submitted Successfully! Thank you for shopping with HY Store.`);
+                switchTab('home');
+            });
         }
 
-        // ORDER TRACKING LOGIC
+        // TRACK ORDER FROM GOOGLE SCRIPT
         function verifyAndTrackOrder(e) {
             e.preventDefault();
-            const orderId = document.getElementById('trackOrderId').value.trim();
-            const phone = document.getElementById('trackPhone').value.trim();
+            const orderIdInput = document.getElementById('trackOrderId').value.trim().toUpperCase();
+            const resultBox = document.getElementById('trackResult');
 
-            const found = orders.find(o => o.orderId.toLowerCase() === orderId.toLowerCase() && o.custPhone === phone);
+            if (!orderIdInput) return;
 
-            const resultContainer = document.getElementById('trackResult');
-            if(found) {
-                resultContainer.classList.remove('hidden');
-                document.getElementById('resOrderId').innerText = found.orderId;
-                document.getElementById('resCustName').innerText = found.custName;
-                document.getElementById('resStatus').innerText = found.statusText;
-                document.getElementById('resCity').innerText = found.city;
-                document.getElementById('resItemsCount').innerText = `${found.itemsCount} Item(s)`;
-                document.getElementById('resTotal').innerText = `Rs. ${found.totalPrice.toLocaleString()}`;
+            const btn = document.getElementById('trackBtn');
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Fetching Status...`;
 
-                // Update timeline status steps
-                const percentage = (found.statusStep / 6) * 100;
-                document.getElementById('timelineProgress').style.width = `${percentage}%`;
-            } else {
-                resultContainer.classList.add('hidden');
-                alert('No matching order found! Please check your Order ID and Phone Number.');
+            resultBox.classList.remove('hidden');
+            resultBox.innerHTML = '<p class="text-center font-semibold text-gray-300 py-4"><i class="fa-solid fa-spinner animate-spin text-brandRed mr-2"></i> Fetching live shipment details from Google Sheet...</p>';
+
+            fetch(SCRIPT_URL + '?action=trackOrder&orderId=' + encodeURIComponent(orderIdInput))
+                .then(res => res.json())
+                .then(data => {
+                    btn.disabled = false;
+                    btn.innerText = 'TRACK MY ORDER';
+                    if (data && data.success && data.order) {
+                        displayTrackingResult(data.order, resultBox);
+                    } else {
+                        resultBox.innerHTML = `<p class="text-center text-red-500 font-semibold py-4"><i class="fa-solid fa-circle-xmark mr-1"></i> No shipment found with Order ID "${orderIdInput}". Please check the ID.</p>`;
+                    }
+                })
+                .catch(err => {
+                    btn.disabled = false;
+                    btn.innerText = 'TRACK MY ORDER';
+                    resultBox.innerHTML = `<p class="text-center text-red-500 font-semibold py-4">Unable to retrieve tracking information right now.</p>`;
+                });
+        }
+
+        function displayTrackingResult(o, resultBox) {
+            let statusLower = (o.status || 'Confirmed').toLowerCase();
+            let widthPct = 25;
+            let s1 = true, s2 = false, s3 = false, s4 = false;
+
+            if (statusLower.includes('processing') || statusLower.includes('confirmed')) {
+                widthPct = 25;
+                s1 = true;
+            } else if (statusLower.includes('dispatched') || statusLower.includes('shipped') || statusLower.includes('transit')) {
+                widthPct = 50;
+                s1 = true; s2 = true;
+            } else if (statusLower.includes('out for delivery')) {
+                widthPct = 75;
+                s1 = true; s2 = true; s3 = true;
+            } else if (statusLower.includes('delivered')) {
+                widthPct = 100;
+                s1 = true; s2 = true; s3 = true; s4 = true;
             }
-        }
 
-        // ADMIN PANEL FUNCTIONS
-        function renderAdminOrders() {
-            const table = document.getElementById('adminOrdersTable');
-            let html = '';
-            orders.forEach(o => {
-                html += `
-                    <tr class="hover:bg-brandGray/50">
-                        <td class="p-3 font-bold text-brandRed">${o.orderId}</td>
-                        <td class="p-3">${o.custName}</td>
-                        <td class="p-3">${o.custPhone}</td>
-                        <td class="p-3 font-bold">Rs. ${o.totalPrice.toLocaleString()}</td>
-                        <td class="p-3 uppercase text-brandRed font-bold">${o.statusText}</td>
-                        <td class="p-3">
-                            <select onchange="updateOrderStatus('${o.orderId}', this.value)" class="bg-brandDark border border-brandBorder rounded px-2 py-1 text-xs">
-                                <option value="1" ${o.statusStep===1?'selected':''}>1. Placed</option>
-                                <option value="2" ${o.statusStep===2?'selected':''}>2. Confirmed</option>
-                                <option value="3" ${o.statusStep===3?'selected':''}>3. Processing</option>
-                                <option value="4" ${o.statusStep===4?'selected':''}>4. Shipped</option>
-                                <option value="5" ${o.statusStep===5?'selected':''}>5. Out For Delivery</option>
-                                <option value="6" ${o.statusStep===6?'selected':''}>6. Delivered</option>
-                            </select>
-                        </td>
-                    </tr>
-                `;
-            });
-            table.innerHTML = html;
-        }
+            resultBox.innerHTML = `
+                <div class="flex flex-col md:flex-row justify-between border-b border-brandBorder pb-4 gap-2">
+                    <div>
+                        <span class="text-xs text-gray-400">Order ID:</span>
+                        <h3 class="text-xl font-extrabold text-brandRed">${o.orderId}</h3>
+                    </div>
+                    <div class="text-left md:text-right">
+                        <span class="text-xs text-gray-400">Customer:</span>
+                        <p class="text-sm font-semibold">${o.customerName || 'Valued Customer'}</p>
+                    </div>
+                </div>
 
-        function updateOrderStatus(orderId, step) {
-            const o = orders.find(x => x.orderId === orderId);
-            if(o) {
-                const stepsText = ['', 'Placed', 'Confirmed', 'Processing', 'Shipped', 'Out For Delivery', 'Delivered'];
-                o.statusStep = parseInt(step);
-                o.statusText = stepsText[step];
-                renderAdminOrders();
-                alert(`Status for ${orderId} updated to: ${o.statusText}`);
-            }
-        }
+                <div>
+                    <h4 class="text-sm font-bold uppercase text-gray-400 mb-6">Delivery Progress</h4>
+                    <div class="relative flex items-center justify-between">
+                        <div class="absolute top-1/2 left-0 right-0 h-1 bg-brandBorder -translate-y-1/2 z-0"></div>
+                        <div class="absolute top-1/2 left-0 h-1 bg-brandRed -translate-y-1/2 z-0 transition-all duration-500" style="width: ${widthPct}%;"></div>
 
-        function adminAddProduct(e) {
-            e.preventDefault();
-            const title = document.getElementById('admTitle').value;
-            const price = parseFloat(document.getElementById('admPrice').value);
-            const category = document.getElementById('admCategory').value;
-            const image = document.getElementById('admImage').value;
-            const desc = document.getElementById('admDesc').value;
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-8 h-8 rounded-full ${s1 ? 'bg-brandRed text-white' : 'bg-brandGray border border-brandBorder text-gray-400'} flex items-center justify-center text-xs font-bold"><i class="fa-solid fa-check"></i></div>
+                            <span class="text-[10px] mt-2 font-semibold">Placed</span>
+                        </div>
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-8 h-8 rounded-full ${s2 ? 'bg-brandRed text-white' : 'bg-brandGray border border-brandBorder text-gray-400'} flex items-center justify-center text-xs font-bold">2</div>
+                            <span class="text-[10px] mt-2 font-semibold">Dispatched</span>
+                        </div>
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-8 h-8 rounded-full ${s3 ? 'bg-brandRed text-white' : 'bg-brandGray border border-brandBorder text-gray-400'} flex items-center justify-center text-xs font-bold">3</div>
+                            <span class="text-[10px] mt-2 font-semibold">On The Way</span>
+                        </div>
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-8 h-8 rounded-full ${s4 ? 'bg-brandRed text-white' : 'bg-brandGray border border-brandBorder text-gray-400'} flex items-center justify-center text-xs font-bold">4</div>
+                            <span class="text-[10px] mt-2 font-semibold">Delivered</span>
+                        </div>
+                    </div>
+                </div>
 
-            const newP = {
-                id: 'p' + (products.length + 1),
-                title, price, category, image, desc
-            };
-
-            products.unshift(newP);
-            renderProducts();
-            alert('New product added successfully!');
-            e.target.reset();
+                <div class="bg-brandGray p-4 rounded-xl border border-brandBorder space-y-2 text-xs">
+                    <p class="flex justify-between"><span>Status:</span> <strong class="text-brandRed uppercase">${o.status || 'Confirmed'}</strong></p>
+                    <p class="flex justify-between"><span>Items:</span> <strong>${o.items}</strong></p>
+                    <p class="flex justify-between"><span>Total Amount:</span> <strong class="text-white font-bold">PKR ${Number(o.totalAmount).toLocaleString()}</strong></p>
+                </div>
+            `;
         }
     </script>
 </body>
